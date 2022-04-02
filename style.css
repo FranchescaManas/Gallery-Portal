@@ -1,0 +1,12 @@
+body{
+    background-color: white;
+}
+
+.offcanvas.offcanvas-end.show {
+    width: 250px;
+} 
+
+.navbar.navbar-expand-sm.navbar-light li a {
+    padding-right: 40px;
+    /* im homeee */
+}
