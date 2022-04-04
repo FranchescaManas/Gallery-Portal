@@ -1,0 +1,56 @@
+body{
+    background-color: #C4A287;
+}
+
+/* the navbar is from bootstrap- if you're having a hard time understanding it
+chat mo nlng ako HAHAHAHAHHAH or you can search on how to customize it */
+
+/*okkk thank you very much!*/
+
+h1{
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+p{
+    font-size: 1.25em;
+    padding-left: 4%;
+    padding-right: 2.5%;
+}
+
+footer{
+    padding-top: 20px;
+    font-style: italic;
+    font-size: .80em;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    background-color: bisque;
+}
+
+#about-section.container-fluid{
+    top: 20%;
+    margin: 8vh auto;
+    width: 90%;
+    height: 30vh;
+    background-color: #f5f1ec;
+    position: relative;
+}
+.navbar.navbar-expand-sm.navbar-light{
+    position: fixed;
+    top: 0;
+    background-color: rgb(195, 135, 66);
+    width: 100%;
+    height: 100px;
+}
+.navbar-expand-sm .navbar-brand{
+    color:rgb(0, 0, 0);
+}
+
+.navbar.navbar-expand-sm.navbar-light li a {
+    
+    padding-right: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
