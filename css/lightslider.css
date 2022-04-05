@@ -1,0 +1,157 @@
+/*======================================================
+** 			|     fancy image slider at bottom       |  		  **
+======================================================== */
+
+.theSlider {
+	border-top: 5px solid #99b1b7;
+	background: #ececec;
+	
+	padding: 2em 0 3em;
+}
+
+.theSlider--empty {
+	/*	if the slider is empty and the user is not in editmode, hide the slider! */
+	display: none;
+}
+.editmode .theSlider--empty {
+	/*	if they're in edit mode, allow them to see (and thus edit) the empty slider even though it's empty.*/
+	display: block;
+}
+.theSlider__intro {
+	text-align: center;
+}
+.theSlider__slider {
+	margin-top: 1em;
+}
+
+
+/*======================================================
+** 			|     custom owl-carousel       |  		  **
+** left arrow goes on left of slider, right arrow on right.
+** we use a single left-arrow graphic for both, and flip the right side to make it point to the right.
+======================================================== */
+body .owl-carousel {
+	position: relative;
+	z-index: 5;
+}
+.owl-carousel .owl-stage {
+	/*	align each image in the carousel to center.	*/
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.owl-prev,
+.owl-next {
+	display: inline-block;
+	/* font-size: 10px; */
+	line-height: 0;
+	color: transparent;
+}
+
+
+.owl-prev:hover, .owl-next:hover{
+    background-color: rgba(0, 0, 0, 0.329) !important;
+    color: white;
+}
+
+
+@media (min-width: 601px) {
+	/*	these are all desktop-only styles!*/
+	.theSlider__slider {
+	
+		/*	leave room for the nav arrows!	*/
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+	.owl-nav {
+		position: absolute;
+		top: 40%;
+		left: 0;
+		right: 0;
+	}
+	.owl-prev,
+	.owl-next {
+		display: block;
+		width: 3em;
+		height: 3em;
+		
+		position: absolute;
+		top: 0;
+	}
+	.owl-prev:after,
+	.owl-next:after {
+		content: url('/images/icon-arrow.png');
+		display: block;
+	}
+	.owl-prev {
+		left: 0;
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	.owl-next {
+		right: 0;
+		-webkit-transform: translateX(100%);
+		        transform: translateX(100%);
+	}
+}
+.owl-prev:after {
+	/* the translateX centers the icon on mobile.*/
+	-webkit-transform: translateX(-25%);
+	        transform: translateX(-25%);
+}
+.owl-next:after {
+	/*
+		the rotate turns the left arrow into a right arrow.
+		the translateX centers it.
+	*/
+	-webkit-transform: rotate(180deg) translateX(-25%);
+	        transform: rotate(180deg) translateX(-25%);
+}
+
+
+
+/*======================================================
+** 			|     mobile owl carousel       |  		  **
+======================================================== */
+/* @media (max-width: 600px) {
+	.theSlider__slider {
+		padding: 0;
+		
+	}
+	
+	.owl-nav {
+		/*	not enough horizontal room, so fit these below the slider to allow the iamges to be wider.*/
+		/* text-align: right; */
+/* 		
+	}
+	.owl-prev,
+	.owl-next {
+		background: #fff;
+		display: inline-block;
+		padding: 7px;
+		font-size: 0;
+		margin-bottom: -50px;
+		
+	} */
+	/* .owl-prev:after,
+	.owl-next:after {
+		display: inline-block;
+		vertical-align: middle;
+		border: 1em solid transparent;
+		border-right-width: 1.1em;
+		border-right-color: #99B1B7;
+		content: "";
+		width: 0;
+		height: 0;
+		font-size: 1rem;
+		margin: 0 2px;
+		/* margin-top: -50px !important; */
+	/* }
+} */ 

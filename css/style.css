@@ -1,0 +1,237 @@
+body{
+ 
+    background-color: rgb(241, 241, 241);
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* positions the nav at the front while allowing it to go over the introduction image  */
+.navbar.navbar-expand-sm.navbar-light{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    background-color: rgb(165,138,108);
+    
+    width: 100%;
+}
+
+
+/* to change nav items proper */
+.navbar.navbar-expand-sm.navbar-light li a {
+    /* color: #f5f1ec;*/
+    color: #f5f1ec;
+    padding-right: 40px;
+    
+}
+/* to change logo text color */
+.navbar-expand-sm .navbar-brand{
+    color:#f5f1ec;
+}
+
+/* sizing all images */
+img{
+ 
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+#welcome-page.container-fluid {
+    min-height: 100%;
+    max-width: 100%;
+    /* width: 1900px; */
+    height: 450px;
+    background-color: black;
+    background-image: url(/Gallery%20Portal/images/extras/bg-2.jpg);
+    /* background-attachment: fixed; */
+    /* background-repeat:  ; */
+    background-size:100%;
+    background-position:center;
+    /* background-position: 51.8% 170%; */
+    /* background-position: center 310%; */
+    /* background-size: 100% auto;
+    background-repeat: no-repeat; */
+    
+    
+    /* background-size: 100% ; */
+    /* background-repeat: no-repeat; */
+    /* Set rules to fill background */
+   
+}
+
+/* minor customizations to boostrap */
+.container-fluid{
+    padding: 0;
+    
+}
+
+.navbar-brand{
+    padding-left: 20px;
+}
+
+#main-bg{
+    position: relative;
+    /* text-align: center; */
+
+ }
+
+/* vw is to the size of the tag adjusts punta ka sakin*/
+/* pspsps ((>.<) omy */
+#introduction-text{
+    position: absolute;
+    z-index: 2;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: -220px;
+    width: fit-content;
+    color: white;
+    padding: 2vw 5vw;
+    /* border: 2px solid black; */
+    background-color: rgba(0, 0, 0, 0.596);
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+    
+}
+
+#gallery-section.container-fluid{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 8vh auto 0;
+    width: 90%;
+    height: 60vh;
+    border: 2px solid black;
+    position: relative;
+}
+
+#gallery-section.container-fluid h2{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* position: absolute; */
+    top: 0;
+    margin-left: 5px;
+    font-weight: 600;
+
+}
+
+
+#artist-section.container-fluid{
+    margin: 8vh auto 0;
+    width: 90%;
+    height: 60vh;
+    /* border: 2px solid black; */
+    position: relative;
+}
+
+#exhibitions-section.container-fluid{
+    
+    margin: 8vh auto 0;
+    width: 90%;
+    height: 60vh;
+    /* border: 2px solid black; */
+    position: relative;
+}
+
+footer{
+    width: 100%;
+    height: 10vh;
+    margin-top: 50px;
+    background-color: bisque;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+    padding: 10px 6px;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+  }
+  
+  .box:hover a{
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+
+  }
+  
+  .box:active a{
+    text-decoration: underline;
+  }
+
+/* box slider test */
+.box{
+    max-width: 250px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    /* border: 2px dotted green; */
+    margin: 40px 10px;
+    height: fit-content;
+    /* overflow: hidden; */
+    /* position: relative; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)  */
+}
+
+.art-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-align: center;
+    text-decoration: none;
+    
+    
+}
+
+
+.artist-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.slide-img{
+    display: flex;
+    align-items: center;
+    max-height: fit-content;
+}
+/* sets the width of the img inside the box */
+.slide-img img{
+    max-width: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+/* formats the details for the item */
+.detail-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.item:hover{
+    max-width: 350px;
+    /* box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2); */
+    border-radius: 10px;
+    /* border: 2px dotted green; */
+    margin: 40px 10px;
+    height: fit-content;
+}
+
+
+
+
+
+

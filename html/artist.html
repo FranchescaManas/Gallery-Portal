@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- links the styling page to this file -->
+    <link rel="stylesheet" href="/Gallery Portal/css/artist.css" />
+  </head>
+  <body>
+    <header>
+      <!-- used navbar in bootstrap -->
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ariestotle Studio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="/Gallery Portal/html/index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Gallery Portal/html/gallery.html"
+                    >Gallery</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Gallery Portal/html/artist.html"
+                    >Artist</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="/Gallery Portal/html/exhibitions.html"
+                    >Exhibitions</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Gallery Portal/html/about.html"
+                    >About</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- best to put the main content of the page in under this tag -->
+    <main >
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <div id="slides__1" class="slide">
+
+              <span class="slide__text">
+                <p>Francisco de Goya <span>(1746–1828)</span></p>
+              </span>
+
+              <img src="/Gallery Portal/images/artists/Francisco_Goya.jpg" alt="">
+              
+              <p class="slide-description">Regarded as the most important Spanish artist of the late eighteenth and early nineteenth centuries. 
+                Over the course of his long career, Goya moved from jolly and lighthearted to deeply pessimistic and
+                 searching in his paintings, drawings, etchings, and frescoes. </p>
+
+
+              <a class="slide__prev" href="#slides__4" title="Next"></a>
+              <a class="slide__next" href="#slides__2" title="Next"></a>
+            </div>
+
+            <div id="slides__2" class="slide">
+              <span class="slide__text">
+                <p>Edward Hopper <span>(1882–1967)</span></p>
+              </span>
+
+              <img src="/Gallery Portal/images/artists/Edward_Hopper_Self_portrait.jpeg" alt="">
+
+              <p class="slide-description">American painter whose realistic depictions of everyday urban scenes shock 
+                the viewer into recognition of the strangeness of familiar surroundings. 
+                He strongly influenced the Pop art and New Realist painters of the 1960s and 1970s.</p>
+
+              <a class="slide__prev" href="#slides__1" title="Prev"></a>
+              <a class="slide__next" href="#slides__3" title="Next"></a>
+            </div>
+            <div id="slides__3" class="slide">
+              <!-- kain lng aq 
+              oki eat well-->
+              <span class="slide__text">
+                <p>Ivan Aivazovsky <span>(1817-1900)</span></p>
+              </span>
+
+              <img src="/Gallery Portal/images/artists/Ivan_Aivazovsky.jpg" alt="">
+
+              <p class="slide-description">Aivazovsky was Russian art's "last Romantic" and a figurehead as such,
+                rather than a direct influence on later artists. His travels to European capitals put
+                 him instinctively on the side of the Westernizers in Russia's cultural schism of the late-19th century.</p>
+
+
+              <a class="slide__prev" href="#slides__2" title="Prev"></a>
+              <a class="slide__next" href="#slides__4" title="Next"></a>
+            </div>
+            <div id="slides__4" class="slide">
+              <span class="slide__text">
+                <p>John Martin <span>(1789-1854)</span></p>
+              </span>
+
+              <img src="/Gallery Portal/images/artists/John_Martin.jpg" alt="">
+
+              <p class="slide-description">One of the great exponents of Romanticism, the 19th century English painter, illustrator and mezzotint
+                 engraver John Martin, achieved huge popular acclaim with his history painting (more accurately, historical 
+                 landscape painting) featuring melodramatic scenes of apocalyptic events taken from the Bible and other
+                  mythological sources.</p>
+
+              <a class="slide__prev" href="#slides__3" title="Prev"></a>
+              <a class="slide__next" href="#slides__1" title="Prev"></a>
+            </div>
+
+          </div>
+          <div class="slider__nav">
+            <a class="slider__navlink" href="#slides__1"></a>
+            <a class="slider__navlink" href="#slides__2"></a>
+            <a class="slider__navlink" href="#slides__3"></a>
+            <a class="slider__navlink" href="#slides__4"></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

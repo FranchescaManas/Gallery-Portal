@@ -1,0 +1,257 @@
+/* ano tong main? */
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 90px;
+
+    /* padding: calc(24px + 0.75vw) 7.5vw; */
+    padding: 32px;
+    justify-content: center;
+}
+
+body{
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    background-color: rgb(255, 255, 255)
+    
+}
+/* whole navbar properties excluding each item */
+.navbar.navbar-expand-sm.navbar-light{
+    position: fixed;
+    top: 0;
+    background-color: rgb(225, 173, 1);
+    width: 100%;
+    height: 90px;
+    
+}
+/* to change logo text color  Ariestotle Studio*/
+.navbar-expand-sm .navbar-brand{
+    color:rgb(0, 0, 0);
+}
+/* to change nav items proper */
+.navbar.navbar-expand-sm.navbar-light li a {
+    
+    /* color: #f5f1ec; */
+    padding-right: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+
+.offcanvas{
+    background-color: rgb(225, 173, 1);
+}
+
+/* boxes heheheheh */
+a:link {
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+  }
+  
+  .box:hover a{
+     text-decoration: underline;
+    text-decoration-thickness: 2.5px; 
+
+  }
+  
+  .box:active a{
+    text-decoration: underline;
+  }
+
+.box{
+    overflow: hidden;
+    /* width: px; */
+    /* box-shadow: 2px 2px 30px rgba(236, 0, 0, 0.2); */
+    /* border-radius: 10px; */
+    /* margin: 10px; */
+    
+    /* palitan mo nlng colors hahahahaha */
+    background-color: inherit; 
+   
+}
+
+.box:hover{
+    
+    /* width: 280px; */
+    /* box-shadow: 2px 2px 30px rgba(236, 0, 0, 0.2); */
+    /* border-radius: 0px;
+    margin: 10px; */
+    
+    /* palitan mo nlng colors hahahahaha */
+
+    /* background: rgba(0, 0, 0, 0.288); */
+
+    /* border: 0.1px double green; */
+    /* overflow: hidden; */
+    /* position: absolute;*/
+    /* yung flex wrap? */
+    /* top: 50px;
+    left: 30px; */
+    /* position: relative; */
+
+    /* iwan na muna */
+    /* transform: translate(-50%, -50%)  */
+    /*  ano ginagawa netong translate HAHAHAHAHA negative margin ata to HAAHAHHAHAHAH */
+    /* wag na siguro . pag clinick siguro yung artist? pero di ko pa nga mapagana tong layout oo */
+    /* may gagawin ba pag pinindot okokok */
+    /* saka na  HAHAHAHAHHA  */
+    /* oo AHHAHAHA */
+    /* maganda na siya kahit hinayaan natin */
+}
+.slide-img{
+    /* option 2 */
+    
+    height: 400px;
+    width: 800px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* position: relative; */
+    /* position: relative; */
+    /* border: 2px solid black; */
+
+    /* hoy take 60 AHAHAHAH uy nagawa mo HAHAHAHAHAH */
+    /* display: inline-block;
+    ok HAHAHAHAHAHH ...... wala akong ginawa..... HHAHAHHAHAHAHAHAHAHHA
+    vertical-align: middle; */
+    /* luh ayaw gumitna */
+    /* display: flex;
+    justify-content: center; */
+
+}
+
+
+.heading > h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 350%;
+}
+/* sets the width of the img inside the box */
+/* di ko ulit tong may extrang img */
+.slide-img img{
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+    /* may cnabi justify content is for aligning horizontally tas align items is for vertical */
+    /* kaso gagana lng siya pag flex yung container or yung parent ng gusto mong i adjust */
+    /* max-height: 100%; */
+    /* position: absolute; */
+    /* max-width: 100%; */
+    /* balik mo nga dun sa lumiliit yung mga landscap */
+    /* object-fit: cover; */
+    /* position: absolute; */
+
+    box-sizing: border-box;
+    object-fit: cover;
+    width: 100%;
+    
+
+    /* border: 2px solid yellow; */
+
+    /* woiiiiiii option 1 */
+    /* display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+/* ------------------------------------------- */
+     /* display: inline-block; */
+    /* vertical-align: middle;  */
+    /* BOOM SAYA HUHUHUHUHUHUHUHU HAHAHAHAHAH*/
+}
+/* yawq na nga kain na brah  mag aaral muna ako <3*/
+/* formats the details for the item */
+.detail-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 12em;
+    padding: 2em;
+    /* border: 2px dotted blue; */
+}
+
+.art-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 2.1em;
+    /* text-align: center;  */
+    text-decoration: none;
+    
+
+    
+}
+
+.artist-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    /* text-align: center; */
+}
+
+
+.page{
+    display:flex;
+    flex-direction: column;
+    margin-left: 5em;
+}
+.wrapper{
+
+
+    display:flex;
+    /* grid-template-columns: minmax(1fr, 1fr); */
+    /* grid-auto-rows: minmax(100px, auto); */
+    /* grid-gap: 1em; */
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-items: stretch;
+    align-items: stretch;
+}
+.wrapper > div{
+    background-color: #eee;
+    /* padding:1em; */
+    /* width: 52em; */
+}
+
+.wrapper > div:nth-child(odd){
+    /* background-color: #ddd; */
+}
+
+
+.box1{
+/* align-self: start; */
+grid-column: 1/3;
+grid-row:1/3;
+}
+
+.box2{
+    /* align-self: end; */
+    grid-column: 3;
+    grid-row: 1/3;
+}
+
+.box3{
+    /* justify-items: end; */
+    grid-column: 2/4;
+    grid-row: 3;
+
+}
+
+.box4{
+    grid-column: 1;
+    grid-row: 2/4;
+    border:1px solid #333;
+}
+
